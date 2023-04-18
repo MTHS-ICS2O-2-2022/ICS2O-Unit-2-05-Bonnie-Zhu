@@ -12,7 +12,6 @@ func main() {
 	var pay int
 	var hours int
 	var tax int
-	var payment int
 
 	// input
 	fmt.Println("This program to find the payment and taxes")
@@ -21,8 +20,6 @@ func main() {
 	fmt.Scanln(&hours)
 	fmt.Print("Enter the pay: ")
 	fmt.Scanln(&pay)
-	fmt.Print("Enter the tax: ")
-	fmt.Scanln(&tax)
 
 	// process
 	payment = (hours * pay) * (1.00 - 0.18)
