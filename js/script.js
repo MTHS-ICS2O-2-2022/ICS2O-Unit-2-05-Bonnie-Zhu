@@ -10,10 +10,9 @@ function calculate() {
   // input
   const pay = parseFloat(document.getElementById('pay-per-hour').value)
   const hours = parseFloat(document.getElementById('hours-worked').value)
-  const tax = parseFloat(document.getElementById('tax-rate').value)
 
   // process
-  const payment = (hours * pay) * (1.00 - tax)
+  const payment = (hours * pay) * (1.00 - 0.18)
   const Taxes = (hours * pay) - payment
 
   // output
