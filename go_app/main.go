@@ -11,9 +11,10 @@ func main() {
 	// This function finds the volume of a right rectangular prism
 	var pay int
 	var hours int
+	var payment int
 
 	// input
-	fmt.Println("This program to find the payment and taxes")
+	fmt.Println("This program to find the payment")
 	fmt.Println()
 	fmt.Print("Enter the hours: ")
 	fmt.Scanln(&hours)
