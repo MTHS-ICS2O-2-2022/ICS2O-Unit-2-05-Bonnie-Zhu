@@ -13,7 +13,7 @@ function calculate() {
 
   // process
   const payment = (hours * pay) * (1.00 - 0.18)
-  const Taxes = (hours * pay) - payment
+  const Taxes = (hours * pay) * 0.18
 
   // output
   document.getElementById('payment').innerHTML = `Your pay will be: $${payment.toFixed(2)}`
