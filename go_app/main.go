@@ -1,31 +1,31 @@
-// Created by: Bonnie Z
-// Created on: April 2023
-//
-// This program finds the area and perimeter of a rectangle
+// createby:Bonnie ZHu
+// Date: 2023 april
+// Description: This is a simple program to calculate the pay and tax
 
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
+
+const taxRate = 0.18
 
 func main() {
-	// This function finds the volume of a right rectangular prism
-	var pay int
-	var hours int
-	var payment int
-
 	// input
-	fmt.Println("This program to find the payment")
-	fmt.Println()
-	fmt.Print("Enter the hours: ")
+	var hours, rate int
+	fmt.Print("Enter the number of hours worked: ")
 	fmt.Scanln(&hours)
-	fmt.Print("Enter the pay: ")
-	fmt.Scanln(&pay)
+	fmt.Print("Enter the hourly rate: ")
+	fmt.Scanln(&rate)
+	fmt.Println() // add an empty line here
 
-	// process
-	payment = (hours * pay) * (1.00 - 0.18)
+	// proccess
+	pay := float64(hours*rate) * (1 - taxRate)
+	tax := float64(hours*rate) * taxRate
 
 	// output
-	fmt.Println()
-	fmt.Println("`Your pay will be: $${payment.toFixed(2)}`")
+	fmt.Printf("Your pay will be: $%.2f\n", pay)
+	fmt.Printf("The government will take: $%.2f\n", tax)
+
 	fmt.Println("\nDone.")
 }
